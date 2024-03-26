@@ -1,3 +1,14 @@
+-- Make neovim highlight yank
+vim.cmd([[
+  augroup YankHighlight
+    autocmd!
+    autocmd TextYankPost * silent! lua vim.highlight.on_yank{higroup="IncSearch", timeout=100}
+  augroup END
+]])
+
+-- Set highight on yank
+-- vim.highlight.on_yank = true
+
 -- Set <space> as the leader key
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "

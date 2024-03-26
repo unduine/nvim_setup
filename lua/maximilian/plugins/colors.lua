@@ -1,14 +1,14 @@
 return {
-  "folke/tokyonight.nvim",
+  "ellisonleao/gruvbox.nvim",
   lazy = false,
   priority = 1000,
   opts = {},
   config = function()
-  	require("tokyonight").setup({})
+  	require("gruvbox").setup({})
 	vim.cmd([[
-	colorscheme tokyonight-storm
-	hi CocUnusedHighlight cterm=underline gui=underline
-	hi Normal guibg=NONE
+	colorscheme gruvbox 
+	hi cocunusedhighlight cterm=underline gui=underline
+	hi normal guibg=none
 	]])
   end,
 }

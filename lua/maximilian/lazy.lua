@@ -11,7 +11,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup({ { import = "maximilian.plugins" } }, {
+require("lazy").setup({{import = "maximilian.plugins"}, {import = "maximilian.plugins.lsp"}}, {
   root = vim.fn.stdpath("data") .. "/lazy", -- directory where plugins will be installed
   defaults = {
     lazy = false, -- should plugins be lazy-loaded?
