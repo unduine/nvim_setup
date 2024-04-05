@@ -12,8 +12,8 @@ if not vim.loop.fs_stat(lazypath) then
 end
 
 vim.opt.rtp:prepend(lazypath)
-
-require 'bittertea.base'
-require 'bittertea.neovide'
-require 'bittertea.keymap'
-require('lazy').setup 'bittertea.plugins'
+-- tea folder is based on https://github.com/bitterteasweetorange/vim
+require 'tea.base'
+require 'tea.neovide'
+require 'tea.keymap'
+require('lazy').setup 'tea.plugins'
