@@ -11,6 +11,6 @@ return {
 
     local keymap = vim.keymap
 
-    keymap.set('n', '<leader>i', '<cmd>ToggleAlternate<cr>')
+    keymap.set('n', '<leader>b', '<cmd>ToggleAlternate<cr>')
   end,
 }

@@ -46,6 +46,7 @@ return {
         },
         git = {
           enable = false,
+          ignore = false,
         },
         diagnostics = {
           enable = true,
