@@ -25,6 +25,11 @@ return {
         'rust-analyzer',
         'graphql-language-service-cli',
         'prisma-language-server',
+        'goimports',
+        'gofumpt',
+        'gomodifytags',
+        'impl',
+        'delve',
       },
     }
   end,
